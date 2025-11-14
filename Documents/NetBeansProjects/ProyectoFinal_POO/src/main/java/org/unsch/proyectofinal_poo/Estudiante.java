@@ -1,14 +1,15 @@
 
 package org.unsch.proyectofinal_poo;
-//HERENCIA: UsuarioSistema<---Comensal
+//HERENCIA: Estudiante hereda de la clase padre Comensal
 public class Estudiante extends Comensal{
+    //Encapsulamiento: Atributos privados y propios
     private String codigoEstudiante;
     private String facultad;
     private String escuelaProfesional;
     private String direccion;
-//CONSTRUCTOR
+//Constructor de la clase hija
     public Estudiante(String codigoEstudinte, String facultad, String escuelaProfesional, String direccion, String nombre, String apellidos, String dni, String celular, String correo) {
-        super(nombre, apellidos, dni, celular, correo);//Atributos heredados
+        super(nombre, apellidos, dni, correo, celular);//Atributos heredados
         this.codigoEstudiante = codigoEstudinte;
         this.facultad = facultad;
         this.escuelaProfesional = escuelaProfesional;
@@ -81,8 +82,5 @@ public class Estudiante extends Comensal{
         System.out.println("Gracias por usar el servicio del comedor universitario.");
         System.out.println("-----------------------------------------");
     } 
-    
-    
-    
     
 }

@@ -1,13 +1,14 @@
 
 package org.unsch.proyectofinal_poo;
-
+//La clase Personal de Seguridad Hereda de la clase Comensal
 public class PersonlSeguridad extends Comensal{
+    //Encapsulamiento: Atributos privados y propios (programar por diferencia)
     private String codigoEmpleado;
     private String turno;
     private String areaAsignada;
 
     public PersonlSeguridad(String codigoEmpleado, String turno, String areaAsignada, String nombre, String apellidos, String dni, String correo, String celular) {
-        super(nombre, apellidos, dni, correo, celular);
+        super(nombre, apellidos, dni, correo, celular); //Atributos que se heredan de la clase padre
         this.codigoEmpleado = codigoEmpleado;
         this.turno = turno;
         this.areaAsignada = areaAsignada;
@@ -53,6 +54,7 @@ public class PersonlSeguridad extends Comensal{
         this.areaAsignada = areaAsignada;
     }
     //metodo sobreescrito
+    @Override
     public String toString() {
         return String.format("PersonalSeguridad{código=%s, nombre=%s, turno=%s, área=%s}",
                 codigoEmpleado, getNombreCompleto(), turno, areaAsignada);

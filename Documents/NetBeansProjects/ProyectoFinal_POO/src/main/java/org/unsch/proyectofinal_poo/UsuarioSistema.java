@@ -44,15 +44,24 @@ public abstract class UsuarioSistema {
     //SETTERS
 
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        if (nombre == null || nombre.trim().isEmpty()){
+            throw new IllegalArgumentException("El nombre no puede estar vacio");
+        }
+        this.nombre = nombre.trim();
     }
 
     public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+        if (apellidos == null || apellidos.trim().isEmpty()){
+            throw new IllegalArgumentException("Los apellidos no pueden estar vacios");
+        }
+        this.apellidos = apellidos.trim();
     }
 
     public void setDni(String dni) {
-        this.dni = dni;
+        if (dni == null || dni.trim().isEmpty()){
+            throw new IllegalArgumentException("El DNI no puede estar vacio");
+        }
+        this.dni = dni.trim();
     }
 
     public void setCelular(String celular) {
@@ -64,10 +73,22 @@ public abstract class UsuarioSistema {
     }
     
     //DIVISION DE RESPONSABILIDAD: metodo de la clase padre, las
-    //clases hijas la heredaran y ellos implmntaran la forma de 
+    //clases hijas la heredaran y ellos implementaran la forma de 
     //ingresar al sistema.
     
     public abstract void ingresarSistema();
+    
+    //División de responsabilidad
+    public String getNombreCompleto(){
+        return nombre + " " + apellidos;
+    }
+    
+    //Metodo heredado de la clase Objet
+    @Override
+    public String toString(){
+        return String.format("Usuario: %s, DNI: %s, Correo: %s",
+                getNombreCompleto(), dni, correo);
+    }
     
     
 }

@@ -1,13 +1,15 @@
 
 package org.unsch.proyectofinal_poo;
-
+//Clase padre: Comensal
 public abstract class Comensal {
+    //Encapsulamiento: atributos privados
     private String nombre;
     private String apellidos;
     private String dni;
     private String correo;
     private String celular;
 
+    //Constructor de la clase padre
     public Comensal(String nombre, String apellidos, String dni, String correo, String celular) {
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -15,7 +17,9 @@ public abstract class Comensal {
         this.correo = correo;
         this.celular = celular;
     }
-    
+    //División de responsabilidad
+    //Metodo propio de la clase padre, la cual heredaran las clases hijas y las implementaran
+    //a su modo.
     public abstract void ingresarSistema();
     
     //GETTERS Y SETTERS
@@ -72,6 +76,7 @@ public abstract class Comensal {
     }
     
     //Metodo Sobreescrito
+    @Override
     public String toString(){
         return String.format("dni=%s, nombre=%s, correo=%s}",
                  dni, getNombreCompleto(), correo);
