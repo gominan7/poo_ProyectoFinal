@@ -1,5 +1,5 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.Comensal;
 //Clase padre: Comensal
 public abstract class Comensal {
     //Encapsulamiento: atributos privados

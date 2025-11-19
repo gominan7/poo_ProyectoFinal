@@ -1,5 +1,5 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.Usuario;
 
 public class AdministradorSistema extends UsuarioSistema{
     private String profesion;

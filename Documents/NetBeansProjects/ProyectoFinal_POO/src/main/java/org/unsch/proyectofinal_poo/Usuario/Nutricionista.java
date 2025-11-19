@@ -1,6 +1,9 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.Usuario;
 //HERENCIA: UsuarioSistema<---Nutricionista
+
+import org.unsch.proyectofinal_poo.Usuario.UsuarioSistema;
+
 public class Nutricionista extends UsuarioSistema{
     //Atributos propios
     private String especialidad;

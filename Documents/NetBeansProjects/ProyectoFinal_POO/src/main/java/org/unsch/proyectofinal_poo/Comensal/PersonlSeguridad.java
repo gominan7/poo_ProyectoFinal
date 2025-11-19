@@ -1,6 +1,9 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.Comensal;
 //La clase Personal de Seguridad Hereda de la clase Comensal
+
+import org.unsch.proyectofinal_poo.Comensal.Comensal;
+
 public class PersonlSeguridad extends Comensal{
     //Encapsulamiento: Atributos privados y propios (programar por diferencia)
     private String codigoEmpleado;

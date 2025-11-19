@@ -1,6 +1,9 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.Comensal;
 //HERENCIA: Estudiante hereda de la clase padre Comensal
+
+import org.unsch.proyectofinal_poo.Comensal.Comensal;
+
 public class Estudiante extends Comensal{
     //Encapsulamiento: Atributos privados y propios
     private String codigoEstudiante;

@@ -1,5 +1,7 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.Usuario;
+
+import org.unsch.proyectofinal_poo.Usuario.UsuarioSistema;
 
 public class PersonalRegistro extends UsuarioSistema{
 

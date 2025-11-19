@@ -1,5 +1,7 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.menu;
+
+import org.unsch.proyectofinal_poo.menu.Menu;
 
 public class Desayuno extends Menu{
     private String acompaniamento;

@@ -1,26 +1,31 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.menu;
 
-public class Almuerzo extends Menu{
+import org.unsch.proyectofinal_poo.menu.Menu;
+
+public class MenuEspecial extends Menu{
+    private String actividad;
     private String segundo;
     private String sopa;
     private String postre;
-    
-    //CONSTRUCTOR
-    public Almuerzo(String segundo, String sopa, String Postre, double precio, String bebida, String descripcion, int calorias, int carbohidratos, int proteinas, int grasas) {
-        super(precio, bebida, descripcion, calorias, carbohidratos, proteinas, grasas);
-        this.segundo = segundo;
-        this.sopa = sopa;
-        this.postre = Postre;
-    }
 
-    public String getHorarioServicio(){
+    public MenuEspecial(String actividad, String Segundo, String sopa, String postre, double precio, String bebida, String descripcion, int calorias, int carbohidratos, int proteinas, int grasas) {
+        super(precio, bebida, descripcion, calorias, carbohidratos, proteinas, grasas);
+        this.actividad = actividad;
+        this.segundo = Segundo;
+        this.sopa = sopa;
+        this.postre = postre;
+    }
+  
+    public String getHoarioServicio(){
         return "11:30 AM - 2:00 PM";
     }
+    
      @Override
     public void mostrarMenuCompleto() {
-        System.out.println("ALMUERZO");
+        System.out.println("MENU ESPECIAL");
         System.out.println("=" .repeat(40));
+        System.out.println("Actividad: " + actividad);
         System.out.println("Sopa: " + sopa);
         System.out.println("Segundo: " + segundo);
         System.out.println("Postre: " + postre);
@@ -30,7 +35,13 @@ public class Almuerzo extends Menu{
         mostrarInformacionNutricional();
         System.out.println("=" .repeat(40));
     }
+    
     //GETTERS
+
+    public String getActividad() {
+        return actividad;
+    }
+
     public String getSegundo() {
         return segundo;
     }
@@ -43,10 +54,15 @@ public class Almuerzo extends Menu{
         return postre;
     }
     //SETTERS
+
+    public void setActividad(String actividad) {
+        this.actividad = actividad;
+    }
+
     public void setSegundo(String segundo) {
         this.segundo = segundo;
     }
-    
+
     public void setSopa(String sopa) {
         this.sopa = sopa;
     }
@@ -54,8 +70,5 @@ public class Almuerzo extends Menu{
     public void setPostre(String postre) {
         this.postre = postre;
     }
-    
-    
-    
     
 }

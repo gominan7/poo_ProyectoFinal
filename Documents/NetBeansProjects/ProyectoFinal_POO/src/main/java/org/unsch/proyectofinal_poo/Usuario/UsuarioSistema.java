@@ -1,5 +1,5 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.Usuario;
 
 //ABSTRACCION:nuestra clase sera abstracta al tomar como algo
 //general a nustra clase UsuarioSistema

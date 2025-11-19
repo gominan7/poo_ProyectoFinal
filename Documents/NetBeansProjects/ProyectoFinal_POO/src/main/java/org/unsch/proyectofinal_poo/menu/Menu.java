@@ -1,5 +1,5 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.menu;
 
 public abstract class Menu {
     private double precio;

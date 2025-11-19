@@ -1,5 +1,7 @@
 
-package org.unsch.proyectofinal_poo;
+package org.unsch.proyectofinal_poo.menu;
+
+import org.unsch.proyectofinal_poo.menu.Menu;
 
 public class Cena extends Menu{
     private String platoPrincipal;

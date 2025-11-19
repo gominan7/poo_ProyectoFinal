@@ -1,6 +1,10 @@
 
 package org.unsch.proyectofinal_poo;
 
+import org.unsch.proyectofinal_poo.Comensal.PersonlSeguridad;
+import org.unsch.proyectofinal_poo.Comensal.Estudiante;
+import org.unsch.proyectofinal_poo.Comensal.Comensal;
+
 public class ProyectoFinal_POO {
 
     public static void main(String[] args) {
